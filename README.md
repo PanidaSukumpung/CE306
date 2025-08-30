@@ -87,7 +87,7 @@ Price: 810
 ```javascript
 let students = [{name: "Kiwi", grade: "A"},
                 {name: "Lisa" , grade: "C"},
-                {name: "Som" , grade: "D"}
+                {name: "Som" , grade: "D"}]
 ```
 - กำหนดตัวแปร ```students``` เป็น array ของ object โดยเก็บข้อมูล name , grade 
 ```javascript
@@ -153,7 +153,7 @@ Total price after discount: $3370
 
 ---
 
-## Workshop3_3: สร้างโปรแกรมคัดครองนักเรียนที่ผ่านเกณฑ์
+## Workshop3_5: สร้างโปรแกรมคัดครองนักเรียนที่ผ่านเกณฑ์
 
 ### การทำงานของโค้ด
 ```javascript
@@ -162,12 +162,12 @@ let students = [{name: "Lana", score: 67 },
     {name: "Bunny", score: 84 },
     {name: "Cookie", score: 45 },
     {name: "Riena", score: 90 },
-    {name: "Megan", score: 50},
+    {name: "Megan", score: 50},]
 ```
 - กำหนดตัวแปร ```students``` เป็น array ของ object โดยเก็บข้อมูล name , score
 
 ```javascript
-function filterPassedStudents(score) {
+function filterPassedStudents(students) {
     students.forEach(function(student){
         if(student.score >= 50 && student.score <=100 ) {
             console.log(`Student ${student.name} passed with score ${student.score}`);
