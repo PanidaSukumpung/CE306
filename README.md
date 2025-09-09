@@ -189,3 +189,24 @@ Student Bunny passed with score 84
 Student Riena passed with score 90
 Student Megan passed with score 50
 ```
+
+# CE306 REACT Typescript
+
+## Components
+### SkillTag
+รับ props:
+- skillName : string (ชื่อสกิล)
+- level (optional): "Beginner" | "Intermediate" | "Advanced"
+ส่งออกเป็น: skill tag
+
+### UserProfileCard
+รับ props:
+- id, name, avatarUrl, email, isOnline, skills, onViewDetails
+- แสดงข้อมูลผู้ใช้ + skills + ปุ่ม "View Details"
+- import SkillTag มาแสดงใน card
+
+## App
+
+- เก็บข้อมูลผู้ใช้ user เป็น array
+- ส่ง props ไป UserProfileCard
+- ฟังก์ชัน handleViewDetails จะแสดง alert เมื่อกดปุ่ม
